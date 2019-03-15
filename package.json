@@ -1,0 +1,12 @@
+{
+  "name": "dem-iron",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "bin": "index.js",
+  "author": "Martin Ždila <martin.zdila@freemap.sk>",
+  "license": "ISC",
+  "dependencies": {
+    "gdal": "0.9.8"
+  }
+}
