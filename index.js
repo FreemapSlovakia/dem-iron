@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const gdal = require('gdal');
+const gdal = require('gdal-async');
 
 if (process.argv.length < 4) {
   console.log(`Usage: dem-iron input_dem output_dem [threshold=4]`);
@@ -14,6 +14,8 @@ const dataset = gdal.open(process.argv[2]);
 const threshold = Number.parseInt(process.argv[4]) || 4;
 
 const { x: width, y: height } = dataset.rasterSize;
+
+console.log('Dataset', dataset);
 
 // output DEM
 const dataset1 = gdal.open(process.argv[3], 'w', 'GTiff', width, height, 1, 'Float32');

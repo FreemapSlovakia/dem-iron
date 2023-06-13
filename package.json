@@ -7,6 +7,6 @@
   "author": "Martin Ždila <martin.zdila@freemap.sk>",
   "license": "ISC",
   "dependencies": {
-    "gdal": "0.9.8"
+    "gdal-async": "^3.7.0"
   }
 }
